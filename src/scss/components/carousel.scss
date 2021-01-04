@@ -1,0 +1,35 @@
+.raine-banner-carousel {
+    & .carousel-item {
+        & .carousel-overlay {
+            @include respondMin(md-tab) {
+                min-height: 95vh;
+            }
+        }
+        & .carousel-images {
+            z-index: -1;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                background-color: rgba($color-black, 0.65);
+            }
+        }
+    }
+    & .carousel-img {
+        z-index: -1;
+    }
+    & .carousel-control-next,
+    & .carousel-control-prev {
+        padding-bottom: 10%;
+    }
+}
+
+@include max-heightLand() {
+    .mouse-down,
+    .carousel-control {
+        display: none !important;
+    }
+}

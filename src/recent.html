@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raine&Horne</title>
+
+    <!-- bootstrap 5  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- font awasome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <!-- favicol -->
+
+    <link rel="icon"
+        href="https://www.raineandhorne.com.au/assets/favicon-3578e5291cf71dc08ef84294c73f81f9ae81938bdfe9319b25640f9fb9a88382.png">
+
+</head>
+
+<body>
+
+
+
+    <div class="wrapper">
+
+        <!-- header -->
+        <header class="fixed-top header  px-4 py-3  px-md-5 d-flex align-items-center">
+            <nav class="navbar p-0 w-100">
+                <div class="container-fluid justify-content-center">
+                    <button class="raine-burger bg-transparent position-absolute start-0 ham-toggle">
+                        <img src="images/burger.svg" alt="burger" class="img-fluid">
+                    </button>
+                    <a href="#"><img src="images/Logo/Logo.png" alt="brand" class="img-fluid brand-logo"></a>
+                    <a
+                        class="d-none  btn btn-outline-primary   raine-btn-sm border-white text-white border-2 border-rd-25 fw-700 position-absolute end-0 d-md-flex justify-content-center align-items-center">
+                        Contact Us
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- sidebar -->
+        <div class="raine-sidebar fixed-top bg-white d-flex flex-column">
+            <div class="">
+                <div class="text-end p-3">
+                    <button class="raine-burger bg-transparent ham-toggle text-gray2">
+                        <i class="fas fa-times fz-22"> </i>
+                    </button>
+                </div>
+
+            </div>
+            <div class="d-flex flex-column justify-content-between overflow-auto sidemenu-link">
+                <div class="brand mb-4">
+                    <a href="#"><img src="images/Logo/Logo.png" alt="brand" class="img-fluid"></a>
+                </div>
+                <ul class="side-ul  fz-18 ">
+                    <li class="nav-items"><a href="index.html" class="text-gray1 ">Home </a></li>
+                    <hr class="line-break w-75 ms-auto">
+                    <li class="nav-items"><a href="latest.html" class="text-gray1 ">Current Projects </a></li>
+                    <li class="nav-items"><a href="recent.html" class="text-gray1 ">Recent Projects </a></li>
+                    <hr class="line-break w-75 ms-auto">
+                    <li class="nav-items pb-0">
+                        <p class="fw-700">Search by Region</p>
+                        <ul class="sideinner-ul">
+                            <li class="nav-items"><a href="#" class="text-gray1 ">Sydney </a></li>
+                            <li class="nav-items"><a href="#" class="text-gray1 ">Adelaide </a></li>
+                            <li class="nav-items"><a href="#" class="text-gray1 ">Brisbane</a></li>
+                            <li class="nav-items"><a href="#" class="text-gray1 ">Queensland</a></li>
+                            <li class="nav-items"><a href="#" class="text-gray1 ">Perth</a></li>
+                        </ul>
+                    </li>
+                    <hr class="line-break w-75 ms-auto">
+                    <li class="nav-items"><a href="About_us.html" class="text-gray1 ">About Us </a></li>
+                    <li class="nav-items"><a href="team.html" class="text-gray1 ">Meet The Team </a></li>
+                    <li class="nav-items"><a href="developer.html" class="text-gray1 ">Developers Wanted </a></li>
+                    <hr class="line-break w-75 ms-auto">
+                    <li class="nav-items"><a href="#" class="text-gray1 ">Latest News </a></li>
+                </ul>
+                <div class="side-contact mt-5 mb-4">
+                    <a href="contact.html"
+                        class="btn btn-outline-primary raine-btn-sm text-gray1 border-gray border-2 border-rd-25 fw-700 d-flex justify-content-center align-items-center w-100">
+                        Contact Us
+                    </a>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <a href="#" class="text-gray1 fw-900 fz-26"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray1 fw-900 fz-26"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray1 fw-900 fz-26"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray1 fw-900 fz-26"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main-content  -->
+        <main class="main-content ">
+            <div class="raine-specifc-page padd-top">
+                <section class="bg-transparent ">
+                    <div class=" text-center ">
+                        <div
+                            class="py-xxl-5 py-4 px-3 d-flex flex-wrap gap-3 align-items-center justify-content-center flex-column flex-md-row">
+                            <p class="fz-24 title-sm title-sm text-white"> Search for your project here:</p>
+                            <div
+                                class="d-md-flex justify-content-center align-content-center flex-wrap gap-lg-2 gap-md-3 search-menu ">
+                                <div class="select-states">
+                                    <select class="fz-16 js-example-placeholder-single select2-box">
+                                        <option></option>
+                                        <option>Sydney, New South Wales (20)</option>
+                                        <option>Brisbane, Queensland (5)</option>
+                                        <option>Melbourne, Victoria (4)</option>
+                                        <option>Adelaide, South Australia (1)</option>
+                                        <option>Gold Coast, Queensland (1)</option>
+                                    </select>
+                                </div>
+                                <div class="select-minprice my-3 my-md-0">
+                                    <select class="fz-16 js-example-placeholder-single select2-box select-minprice">
+                                        <option></option>
+                                        <option value="$3,00,000">$3,00,000</option>
+                                        <option value="$3,00,000">$3,00,000</option>
+                                        <option value="$3,00,000">$3,00,000</option>
+                                        <option value="$3,00,000">$3,00,000</option>
+                                        <option value="$3,00,000">$3,00,000</option>
+                                    </select>
+                                </div>
+                                <div class="select-maxprice ">
+                                    <select class="fz-16 js-example-placeholder-single select2-box">
+                                        <option></option>
+                                        <option value="$3,00,000">$3,00,000</option>
+                                        <option value="$3,00,000">$3,00,000</option>
+                                        <option value="$3,00,000">$3,00,000</option>
+                                        <option value="$3,00,000">$3,00,000</option>
+                                        <option value="$3,00,000">$3,00,000</option>
+                                    </select>
+                                </div>
+                                <button
+                                    class="btn btn-primary raine-btn-sm  text-white border-0 border-rd-25 fz-18 fw-700 ms-3 mt-3 mt-md-0">Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class=" bg-white tabs-sec nav__menu">
+                    <div class="container-xl">
+                        <div class="row align-items-center justify-content-between">
+                            <ul
+                                class="raine-nabpills nav flex-nowrap nav-pills overflow-auto justify-content-between align-items-center position-relative">
+                                <li class="nav-item">
+                                    <a href="#home"
+                                        class="nav-link raine-tabs-link text-nowrap  text-gray1 fw-700 fz-18 "
+                                        role="tab">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#project-intro"
+                                        class="nav-link raine-tabs-link text-nowrap text-gray1 fw-700 fz-18 active"
+                                        role="tab">Project Intro</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#photo-gallery"
+                                        class="nav-link raine-tabs-link text-nowrap text-gray1 fw-700 fz-18">photo
+                                        gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#feature"
+                                        class="nav-link raine-tabs-link text-nowrap text-gray1 fw-700 fz-18">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#agent"
+                                        class="nav-link raine-tabs-link text-nowrap text-gray1 fw-700 fz-18">Agent
+                                        Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link raine-tabs-link text-nowrap text-gray1 fw-700 fz-18"
+                                        href="#location">Location</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#enquire"
+                                        class="nav-link raine-tabs-link text-nowrap text-gray1 fw-700 fz-18">Enquire</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- home tab -->
+                <section class="raine-tabs px-3 px-md-0 p-y-110" id="home">
+                    <div class="container-xl">
+                        <div class="row">
+                            <div class="col-12">
+                                <div
+                                    class="w-100 d-flex align-items-center raine-tabs-pane justify-content-center flex-wrap h-100">
+                                    <div class="text-center text-white">
+                                        <p class="fz-60 title-xxl fw-700">7 Jabiru</p>
+                                        <div class="line-divide mx-auto my-4"></div>
+                                        <p class="fz-30 title-md">7 Jabiru Drive, Fern Bay, NSW 2295</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- project-intro -->
+            <section class="p-y-110 raine-tabs px-3 px-md-0" id="project-intro">
+                <div class="container-xl">
+                    <div class="row align-items-center">
+                        <div class="col-md-5">
+                            <img src="images/jabiru.svg" alt="jabiru" class="img-fluid">
+                        </div>
+                        <div class="col-md-7">
+                            <p class="fz-18 fw-500 lh-1_5 mb-4">Meticulously crafted by multi-award winning Eden Brae
+                                Homes,
+                                this c.2013 single
+                                level abode is designed to embrace light, space and a seamless in/outdoor lifestyle
+                                complete with impressive alfresco entertaining and saltwater pool. </p>
+                            <p class="fz-18 fw-500 lh-1_5">
+                                This home is spacious, with three large living zones plus a formal and informal dining
+                                spaces, giving ultimate flexibility for the modern family. Perfectly positioned on a
+                                sizable 798m2 level block, this allows garaging for 3 cars, plus additional driveway
+                                space, making this the perfect family home.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- images gallery -->
+            <section class="images-gallery raine-tabs px-md-0 px-3" id="photo-gallery">
+                <div class="container-fluid p-lg-0">
+                    <div class="row  g-lg-0">
+                        <div class="col-12 text-center my-5">
+                            <h3 class="fz-40 title-lg text-uppercase"><span class="fw-700">Photo </span> Gallery</h3>
+                        </div>
+                        <div class="col-lg-6">
+                            <a data-fancybox="gallery" href="images/banner/1.png">
+                                <div class="img-box position-relative w-100 h-100">
+                                    <img src="images/banner/1.png" alt="" class="img-fluid  image-gallery  w-100 h-100">
+                                    <div
+                                        class=" img-overlay d-flex justify-content-center align-items-center position-absolute top-0 end-0 start-0 bottom-0">
+                                        <button
+                                            class="raine-btn-xl text-white position-absolute  bg-yellow fz-24 title-sm text-uppercase fw-700 btn btn-lg test ">View
+                                            images</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row g-md-0 ">
+                                <div class="col-md-6">
+                                    <a href="images/photogallery/photo_1.png" data-fancybox="gallery">
+                                        <div class="img-box position-relative h-100">
+                                            <img src="images/photogallery/photo_1.png" alt="photo"
+                                                class="img-fluid   image-gallery w-100">
+                                            <div
+                                                class=" img-overlay d-flex justify-content-center align-items-center position-absolute top-0 end-0 start-0 bottom-0">
+                                                <button
+                                                    class="raine-btn-xl text-white position-absolute  bg-yellow fz-24 title-sm text-uppercase fw-700 btn btn-lg ">View
+                                                    images</button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="images/photogallery/photo_2.png" data-fancybox="gallery">
+                                        <div class="img-box position-relative h-100">
+                                            <img src="images/photogallery/photo_2.png" alt="photo"
+                                                class="img-fluid   image-gallery w-100">
+                                            <div
+                                                class=" img-overlay d-flex justify-content-center align-items-center position-absolute top-0 end-0 start-0 bottom-0">
+                                                <button
+                                                    class="raine-btn-xl text-white position-absolute  bg-yellow fz-24 title-sm text-uppercase fw-700 btn btn-lg ">View
+                                                    images</button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="images/photogallery/photo_3.png" data-fancybox="gallery">
+                                        <div class="img-box position-relative h-100">
+                                            <img src="images/photogallery/photo_3.png" alt="photo"
+                                                class="img-fluid   image-gallery w-100">
+                                            <div
+                                                class=" img-overlay d-flex justify-content-center align-items-center position-absolute top-0 end-0 start-0 bottom-0">
+                                                <button
+                                                    class="raine-btn-xl text-white position-absolute  bg-yellow fz-24 title-sm text-uppercase fw-700 btn btn-lg ">View
+                                                    images</button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="images/photogallery/photo_4.png" data-fancybox="gallery">
+                                        <div class="img-box position-relative h-100">
+                                            <img src="images/photogallery/photo_4.png" alt="photo"
+                                                class="img-fluid   image-gallery w-100">
+                                            <div
+                                                class=" img-overlay d-flex justify-content-center align-items-center position-absolute top-0 end-0 start-0 bottom-0">
+                                                <button
+                                                    class="raine-btn-xl text-white position-absolute  bg-yellow fz-24 title-sm text-uppercase fw-700 btn btn-lg ">View
+                                                    images</button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+
+            <!-- feature sec -->
+            <section class="project-feature-sec p-y-110 raine-tabs px-3 px-md-0" id="feature">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex flex-wrap flex-xl-nowrap justify-content-xl-end  align-items-center">
+                                <div class="card border-0 feature-card rounded-0  p-md-5 p-2 order-1 order-xl-0">
+                                    <h4 class="fz-40 title-lg text-uppercase mb-4"><span class="fw-700 ">Project </span>
+                                        Features
+                                    </h4>
+                                    <ul class="feature-ul">
+                                        <li class="feature-li">
+                                            <p class="fz-16 fw-500 mb-4">
+                                                Windows and glass portions of doors helps to control solar heat
+                                                loss.
+                                            </p>
+                                        </li>
+                                        <li class="feature-li">
+                                            <p class="fz-16 fw-500 mb-4">
+                                                Light-filled, open plan designs
+                                            </p>
+                                        </li>
+                                        <li class="feature-li">
+                                            <p class="fz-16 fw-500 mb-4">
+                                                Entertainer's kitchens with stone bench tops and breakfast bars
+                                            </p>
+                                        </li>
+                                        <li class="feature-li">
+                                            <p class="fz-16 fw-500 mb-4">
+                                                An energy recovery ven­ti­la­tion system provides con­trolled
+                                                ven­ti­la­tion.
+                                            </p>
+                                        </li>
+                                        <li class="feature-li">
+                                            <p class="fz-16 fw-500 mb-4">
+                                                Efficiently unleash cross-media information without cross-media
+                                                value.
+                                            </p>
+                                        </li>
+                                        <li class="feature-li">
+                                            <p class="fz-16 fw-500 mb-4">
+                                                Capitalize on low hanging fruit to identify a ballpark value added
+                                                activity.
+                                            </p>
+                                        </li>
+                                        <li class="feature-li">
+                                            <p class="fz-16 fw-500 mb-4">
+                                                Windows and glass portions of doors helps to control solar heat
+                                                loss.
+                                            </p>
+                                        </li>
+                                        <li class="feature-li">
+                                            <p class="fz-16 fw-500 mb-4">
+                                                Light-filled, open plan designs
+                                            </p>
+                                        </li>
+                                        <li class="feature-li">
+                                            <p class="fz-16 fw-500 mb-4">
+                                                Entertainer's kitchens with stone bench tops and breakfast bars
+                                            </p>
+                                        </li>
+                                        <li class="feature-li">
+                                            <p class="fz-16 fw-500 mb-4">
+                                                An energy recovery ven­ti­la­tion system provides con­trolled
+                                                ven­ti­la­tion.
+                                            </p>
+                                        </li>
+                                        <li class="feature-li">
+                                            <p class="fz-16 fw-500 mb-4">
+                                                Efficiently unleash cross-media information without cross-media
+                                                value.
+                                            </p>
+                                        </li>
+                                        <li class="feature-li">
+                                            <p class="fz-16 fw-500 mb-4">
+                                                Capitalize on low hanging fruit to identify a ballpark value added
+                                                activity.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="project-feature-img mb-4 mb-xl-0">
+                                    <img src="images/photogallery/project_Feature.png" alt="feature" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- agent sec -->
+            <section class="agent-sec p-y-80 raine-tabs px-md-0 px-3" id="agent">
+                <div class="container-xl">
+                    <div class="row justify-content-between">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <div class="agent-bg">
+                                <img src="images/agent_Bg.png" alt="agent-bg" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="fz-40 title-lg text-uppercase"><span class="fw-700">Agent</span> Contact</h4>
+                            <p class="fz-24 title-sm fw-300 text-uppercase lh-1_5 mb-2"> Now Selling
+                            </p>
+                            <p class="fz-24 title-sm fw-300 text-uppercase lh-1_5 mb-4">Inspect by Appointment Only</p>
+                            <div class="d-flex flex-wrap align-items-center gap-3 mb-4 ">
+                                <img src="images/agent.png" alt="agent" class="agent-img rounded-circle">
+                                <div class="agent-info">
+                                    <h5 class="fz-24 title-sm text-uppercase">Michael Sutther
+                                    </h5>
+                                    <p class="text-uppercase mb-4">real estate broker</p>
+                                    <a href="" class="hover-link text-orange fw-bold fz-18 text-uppercase"><i
+                                            class="fas fa-link text-gray1"></i>
+                                        raineandhorne.com.au
+                                        <i class="fas fa-arrow-circle-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <p class="fz-18 lh-1_5">
+                                *All information contained herein is gathered from sources we consider to be
+                                reliable, however we cannot guarantee or give any warranty to the information
+                                provided. The property images contained within this advertisement are artist's
+                                impressions and are not photos of the actual finished product.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- location -->
+            <section class="p-y-110 pb-0 mt-md-5 map-sec raine-tabs px-3 px-md-0" id="location">
+                <div class=" container-fluid">
+                    <div class="row g-0">
+                        <div class="col-12 text-center">
+                            <h5 class="text-uppercase fz-40 title-lg my-5"><span class="fw-700">Location </span> Map
+                            </h5>
+                            <div id="map" class="map w-100">
+                                <img src="images/location.png" alt="map" class="img-fluid w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- enquire -->
+            <section class="p-y-110 know-sec raine-tabs px-3 px-md-0" id="enquire">
+                <div class="container-xl">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h4 class="fz-60 title-xxl  fw-300 "><span class="fw-700"> Do you want </span>
+                                to know
+                                More?
+                            </h4>
+                            <p class="fz-18 fw-500 my-4">To enquire about this property marketed by the Raine & Horne
+                                group
+                                call <span class="fz-24 title-sm text-orange"> 02 9258 5444 </span> or</p>
+                            <a
+                                class="fw-700 px-5 btn raine-btn-xl  btn-primary fz-24 title-sm d-flex align-items-center justify-content-center mx-auto border-rd-40 ">Click
+                                here to
+                                enquire</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <!-- footer  -->
+        <footer class="footer-sec p-y-110 px-3 px-md-0">
+            <div class=" container-xl text-white">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <a href="#"><img src="images/Logo/Logo.png" alt="brand" class="img-fluid brand-logo"></a>
+                        <div class="line-highlight my-4 bg-white"></div>
+                    </div>
+                </div>
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-xl-3  col-sm-6 col-md-4 ">
+                        <h4 class="fz-24 title-sm title-sm fw-700 mb-4">
+                            <span class="fz-16 text-uppercase pb-2 d-block">Phone</span>
+                            <span class="fw-300 fz-30 title-md">02 9258 5444</span>
+                        </h4>
+                        <p class="fz-14 fw-400">
+                            Level 11, 447 Kent Street Sydney, 2000
+                        </p>
+                        <div class="follow-us my-4">
+                            <h4 class="fs-16 fw-700 text-uppercase mb-4"> FOLLOW US</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="" class="text-white fz-12"><i class="fa-2x fab fa-facebook-f"></i></a>
+                                <a href="" class="text-white fz-12"><i class="fa-2x fab fa-linkedin-in"></i></a>
+                                <a href="" class="text-white fz-12"><i class="fa-2x fab fa-instagram"></i></a>
+                                <a href="" class="text-white fz-12"><i class="fa-2x fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-md-4">
+                        <h4 class="fz-24 title-sm title-sm fw-700 mb-4">
+                            VIEW PROJECTS
+                        </h4>
+                        <ul class="raine-foot-link">
+                            <li><a href="" class="raine-link text-white">
+                                    Current Projects
+                                </a></li>
+                            <li><a href="" class="raine-link text-white">
+                                    Recent Projects
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-md-4">
+                        <h4 class="fz-24 title-sm title-sm fw-700 mb-4">
+                            SEARCH BY REGION
+                        </h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="raine-foot-link">
+                                    <li><a href="" class="raine-link text-white">Sydney</a></li>
+                                    <li><a href="" class="raine-link text-white">Adelaide</a></li>
+                                    <li><a href="" class="raine-link text-white">Brisbane</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="raine-foot-link">
+                                    <li><a href="" class="raine-link text-white">Perth</a></li>
+                                    <li><a href="" class="raine-link text-white">Queensland</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-md-4">
+                        <h4 class="fz-24 title-sm title-sm fw-700 mb-4">
+                            QUICK LINKS
+                        </h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="raine-foot-link">
+
+                                    <li><a href="" class="fz-18 raine-link text-white text-nowrap ">Meet The Team</a>
+                                    </li>
+                                    <li><a href="" class="fz-18 raine-link text-white text-nowrap ">Latest News</a></li>
+                                    <li><a href="" class="fz-18 raine-link text-white text-nowrap ">Developers
+                                            Wanted</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="raine-foot-link text-end ">
+                                    <li><a href="" class="fz-18 raine-link text-white ">About
+                                            Us</a>
+                                    </li>
+                                    <li><a href="" class="fz-18 raine-link text-white ">Contact
+                                            Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-between mt-5 gap-3">
+                    <div class="col-auto">
+                        <p class="copyright-text">© 2020 – LenkLoard. All rights reserved.</p>
+                    </div>
+                    <div class="col-auto">
+                        <a href="" class="text-white  policy-link">Terms and Conditions</a>
+                        <a href="" class="text-white  policy-link">System admin</a>
+                        <a href="" class="text-white  policy-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- script  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+    <script>
+        // In your Javascript (external .js resource or <script> tag)
+        $(".js-example-placeholder-single").select2({
+            placeholder: "Select a state",
+            allowClear: true,
+            containerCssClass: "error",
+        });
+    </script>
+    <script>
+        $('[data-fancybox="gallery"]').fancybox({
+            buttons: [
+                "autoplay",
+                "zoom",
+                "share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close",
+
+            ],
+        });
+    </script>
+
+    <script src="js/main.js"></script>
+    <script src="js/section_tabs.js"></script>
+</body>
+
+</html>

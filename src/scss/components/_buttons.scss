@@ -1,0 +1,65 @@
+.raine-btn {
+    &-xl {
+        width: 19.875rem;
+        height: 6.25rem; //318px
+        @include respondMax(hd-desktop) {
+            height: 5rem;
+            width: 15rem;
+        }
+        @include respondMax(lg-desktop) {
+            width: 14rem;
+            height: 4rem;
+        }
+    }
+    &-lg {
+        max-width: 29.5rem; //472px
+        height: 4.25rem; //68px
+        @include respondMax(lg-desktop) {
+            height: 4rem;
+        }
+        @include respondMax(md-tab) {
+            height: 3.5rem;
+        }
+    }
+    &-md {
+        width: 13.25rem; //212px
+        height: 4.25rem; //68px
+        @include respondMax(lg-desktop) {
+            height: 4rem;
+        }
+        @include respondMax(md-tab) {
+            height: 3.5rem;
+        }
+    }
+    &-sm {
+        height: 3.125rem;
+        width: 9.375rem;
+        @include respondMax(lg-desktop) {
+            height: 2.975rem;
+        }
+    }
+    &-xs {
+        width: max-content;
+        height: 2.5rem; //40px
+    }
+}
+
+.btn- {
+    &primary {
+        background: linear-gradient(180deg, #f99d1c 0%, #ffcb05 100%) no-repeat padding-box;
+        border: none;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            background: linear-gradient(to bottom, $color-yellow 0%, $color-orange 100%) no-repeat !important;
+        }
+    }
+    &outline {
+        &-primary {
+            &:hover {
+                color: $color-white !important;
+                background: linear-gradient(180deg, #f99d1c 0%, #ffcb05 100%) no-repeat padding-box;
+                border: none !important;
+            }
+        }
+    }
+}

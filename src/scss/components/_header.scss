@@ -1,0 +1,29 @@
+.header {
+    transition: 0.5s ease-in-out;
+    z-index: 1055;
+    height: 85px;
+    @include respondMax(sm-phone) {
+        height: 65px;
+    }
+    &.header-bg {
+        background-color: $color-dark3 !important;
+        // backdrop-filter:saturate(180%) blur(20px);
+    }
+    & .brand-logo {
+        width: 19.325rem;
+        @include respondMax(lg-desktop) {
+            width: 16rem;
+        }
+        @include respondMax(sm-phone) {
+            width: 14rem;
+        }
+    }
+    & .raine-burger {
+        & img {
+            width: 2.125rem;
+            @include respondMax(sm-phone) {
+                width: 1.875rem;
+            }
+        }
+    }
+}

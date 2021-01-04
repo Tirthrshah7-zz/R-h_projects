@@ -1,0 +1,93 @@
+.raine-sidebar {
+    transform: translateX(-900px);
+    opacity: 0;
+    z-index: 2000;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    height: 100%;
+    width: 23.1875rem; //371px
+    max-height: 1080px;
+    & > * {
+        transform: translateY(20px);
+        opacity: 0;
+        transition: 0.9s ease-in-out transform;
+    }
+    & .line-break {
+        background-color: $color-gray4;
+    }
+    & .brand {
+        padding: 0rem 2.5rem;
+        img {
+            width: 11.5625rem; //185px
+        }
+    }
+    & .sidemenu-link {
+        // flex: 2;
+        &::-webkit-scrollbar {
+            width: 5px !important;
+        }
+        &::-webkit-scrollbar-track {
+            background: $color-gray5;
+        }
+
+        scrollbar-color: $color-orange $color-gray5;
+        scrollbar-width: thin;
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: $color-orange;
+        }
+
+        & .side-ul {
+            // max-height: calc(100vh - 100px);
+            & .nav-items {
+                padding: 0.75rem 2.5rem;
+                a {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        background-color: $color-yellow !important;
+                        width: 20px;
+                        height: 7px;
+                        opacity: 0;
+                        left: 0;
+                        position: absolute;
+                        transition: opacity 0.5s ease-in-out;
+                    }
+                    &:hover {
+                        color: $color-yellow !important;
+                        padding-left: 1.8rem;
+                        &::before {
+                            opacity: 1;
+                            transition: opacity 0.5s ease-in-out;
+                        }
+                    }
+                }
+            }
+
+            & .sideinner-ul {
+                & .nav-items {
+                    padding: 0.75rem 1.5rem;
+                }
+            }
+        }
+        & .side-contact {
+            padding: 0rem 2.5rem;
+        }
+    }
+}
+
+.side_collaspe {
+    & .raine-sidebar {
+        opacity: 1;
+        opacity: 1;
+        transform: translateX(0%);
+        transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+        & > * {
+            transform: translateY(0px);
+            opacity: 1;
+            transition: 0.9s ease-in-out transform;
+        }
+    }
+}

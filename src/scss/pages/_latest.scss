@@ -1,0 +1,28 @@
+
+
+.living-sec{
+    & .project-box{
+        @include respondMin(md-tab){
+        max-width: 518px;
+        max-height: 349px;
+        }
+        @include respondMax(md-tab){
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.living-us-img{
+    & img{
+        width: 73.0625rem;
+    }
+}
+
+.living-card{
+    @include respondMin(xl-desktop){
+    width: 56.25rem;
+    margin-left: -18%;
+    }
+}

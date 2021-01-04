@@ -1,0 +1,295 @@
+<html>
+
+<body>
+    <header>
+        <h1>Image Gallery <br>With<br> Popup Window & Nav-buttons</h1>
+        <h2>(Pure CSS3, No JS)<h2>
+                <style>
+                    body {
+                        background-color: #2a2e39;
+                    }
+
+                    header {
+                        color: #d5d1c6;
+                        font-size: 1.5em;
+                        text-align: center;
+                        margin-bottom: 4em;
+                        margin-top: 2em;
+                    }
+
+                    header h1 {
+                        border-bottom: 1px solid;
+                        width: 14em;
+                        margin: 0 auto;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .img-container {
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-flex-flow: row wrap;
+                        flex-flow: row wrap;
+                        width: 90%;
+                        margin-left: 5%;
+                    }
+
+                    .img-container .wrapper {
+                        -webkit-flex: 1 0 24%;
+                        flex: 1 0 24%;
+                        border: 2px solid #d5d1c6;
+                        height: 12vw;
+                        margin: .2em;
+                        overflow: hidden;
+                    }
+
+                    .overlay {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        visibility: hidden;
+                        opacity: 0;
+                    }
+
+                    .overlay .cancel {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        cursor: default;
+                    }
+
+                    .overlay:target {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+
+                    .overlay:target img {
+                        -moz-animation-name: img-transition;
+                        -webkit-animation-name: img-transition;
+                        animation-name: img-transition;
+                        -moz-animation-duration: 1s;
+                        -webkit-animation-duration: 1s;
+                        animation-duration: 1s;
+                        -moz-animation-timing-function: ease-in;
+                        -webkit-animation-timing-function: ease-in;
+                        animation-timing-function: ease-in;
+                    }
+
+                    .popup {
+                        background: rgba(0, 0, 0, 0.9);
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                    }
+
+                    .popup .left,
+                    .popup .right {
+                        position: absolute;
+                        width: 3em;
+                        height: 3em;
+                        opacity: 0.9;
+                        font-size: 56px;
+                        color: #fff;
+                        text-align: center;
+                        text-decoration: none;
+                    }
+
+                    .popup .left:hover,
+                    .popup .right:hover {
+                        opacity: 1;
+                        font-weight: bold;
+                    }
+
+                    .popup .left {
+                        top: 40%;
+                        left: 5%;
+                    }
+
+                    .popup .right {
+                        top: 40%;
+                        right: 5%;
+                    }
+
+                    .popup .content {
+                        background-color: black;
+                        width: 70%;
+                        margin: 0 auto 0 auto;
+                        overflow: hidden;
+                        position: relative;
+                        top: 50%;
+                        -webkit-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                    }
+
+                    @-moz-keyframes img-transition {
+                        0% {
+                            opacity: 0;
+                        }
+
+                        100% {
+                            opacity: 1;
+                        }
+                    }
+
+                    @-webkit-keyframes img-transition {
+                        0% {
+                            opacity: 0;
+                        }
+
+                        100% {
+                            opacity: 1;
+                        }
+                    }
+
+                    @keyframes img-transition {
+                        0% {
+                            opacity: 0;
+                        }
+
+                        100% {
+                            opacity: 1;
+                        }
+                    }
+                </style>
+    </header>
+    <!--the anchor-tags have id's as href-values, which act as links to the corresponding overlay-container-->
+    <section class="img-container">
+        <div class="wrapper">
+            <a href="#popup1">
+                <img src="https://i.imgur.com/2SmuIPR.jpg" />
+            </a>
+        </div>
+        <div class="wrapper">
+            <a href="#popup2">
+                <img src="https://i.imgur.com/3DhRELJ.jpg" />
+            </a>
+        </div>
+        <div class="wrapper">
+            <a href="#popup3">
+                <img src="https://i.imgur.com/ZImYjLm.jpg" />
+            </a>
+        </div>
+        <div class="wrapper">
+            <a href="#popup4">
+                <img src="https://i.imgur.com/cgDcW7L.jpg" />
+            </a>
+        </div>
+        <div class="wrapper">
+            <a href="#popup5">
+                <img src="https://i.imgur.com/7kE4a8w.jpg" />
+            </a>
+        </div>
+        <div class="wrapper">
+            <a href="#popup6">
+                <img src="https://i.imgur.com/0LHjew6.jpg" />
+            </a>
+        </div>
+        <div class="wrapper">
+            <a href="#popup7">
+                <img src="https://i.imgur.com/V6cH6yo.jpg" />
+            </a>
+        </div>
+        <div class="wrapper">
+            <a href="#popup8">
+                <img src="https://i.imgur.com/2twsgOg.jpg" />
+            </a>
+        </div>
+    </section>
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <a class="right" href="#popup2"> > </a>
+            <div class="content">
+                <a class="cancel" href="#"></a>
+                <img src="https://i.imgur.com/2SmuIPR.jpg" />
+            </div>
+        </div>
+    </div>
+
+
+    <div id="popup2" class="overlay">
+        <div class="popup">
+            <a class="left" href="#popup1">
+                < </a>
+                    <a class="right" href="#popup3"> > </a>
+                    <div class="content">
+                        <a class="cancel" href="#"></a>
+                        <img src="https://i.imgur.com/3DhRELJ.jpg" />
+                    </div>
+        </div>
+    </div>
+
+    <div id="popup3" class="overlay">
+        <div class="popup">
+            <a class="left" href="#popup2">
+                < </a>
+                    <a class="right" href="#popup4"> > </a>
+                    <div class="content">
+                        <a class="cancel" href="#"></a>
+                        <img src="https://i.imgur.com/ZImYjLm.jpg" />
+                    </div>
+        </div>
+    </div>
+
+    <div id="popup4" class="overlay">
+        <div class="popup">
+            <a class="left" href="#popup3">
+                < </a>
+                    <a class="right" href="#popup5"> > </a>
+                    <div class="content">
+                        <a class="cancel" href="#"></a>
+                        <img src="https://i.imgur.com/cgDcW7L.jpg" />
+                    </div>
+        </div>
+    </div>
+    <div id="popup5" class="overlay">
+        <div class="popup">
+            <a class="left" href="#popup4">
+                < </a>
+                    <a class="right" href="#popup6"> > </a>
+                    <div class="content">
+                        <a class="cancel" href="#"></a>
+                        <img src="https://i.imgur.com/7kE4a8w.jpg" />
+                    </div>
+        </div>
+    </div>
+    <div id="popup6" class="overlay">
+        <div class="popup">
+            <a class="left" href="#popup5">
+                < </a>
+                    <a class="right" href="#popup7"> > </a>
+                    <div class="content">
+                        <a class="cancel" href="#"></a>
+                        <img src="https://i.imgur.com/0LHjew6.jpg" />
+                    </div>
+        </div>
+    </div>
+    <div id="popup7" class="overlay">
+        <div class="popup">
+            <a class="left" href="#popup6">
+                < </a>
+                    <a class="right" href="#popup8"> > </a>
+                    <div class="content">
+                        <a class="cancel" href="#"></a>
+                        <img src="https://i.imgur.com/V6cH6yo.jpg" />
+                    </div>
+        </div>
+    </div>
+    <div id="popup8" class="overlay">
+        <div class="popup">
+            <a class="left" href="#popup7">
+                < </a>
+                    <div class="content">
+                        <a class="cancel" href="#"></a>
+                        <img src="https://i.imgur.com/2twsgOg.jpg" />
+                    </div>
+        </div>
+    </div>
+</body>
+
+</html>

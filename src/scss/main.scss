@@ -1,0 +1,25 @@
+@import "./abstract/mixins";
+@import "./abstract/variables";
+
+@import "./base/base";
+@import "./base/colors";
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/utilities";
+
+@import "./components/buttons";
+@import "./components/carousel.scss";
+@import "./components/inputs";
+@import "./components/footer";
+@import "./components/header";
+@import "./components/Select";
+@import "./components/sidebar";
+@import "./components/tabs";
+
+@import "./pages/index";
+@import "./pages/latest";
+@import "./pages/gallery";
+@import "./pages/team";
+@import "./pages/About_us";
+@import "./pages/contact";
+@import "./pages/developer";

@@ -1,0 +1,110 @@
+.select2-container {
+    & .select2-selection__rendered {
+        color: $color-gray !important;
+        font-size: 1.125rem;
+        padding-left: 1.35rem !important;
+    }
+    & .select2-search {
+        display: none !important;
+    }
+    & .select2-selection {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        height: 3.125rem; //50px
+    }
+    & .select2-dropdown {
+        margin: 0.5rem 0 !important;
+        padding: 1rem;
+        & .select2-results__options {
+            max-height: 200px !important;
+            & .select2-results__option {
+                position: relative;
+                background-color: transparent !important;
+                color: $color-gray !important;
+                transition: all 0.3s ease-in-out;
+                display: flex;
+                align-items: center;
+                &::before {
+                    content: "";
+                    width: 20px;
+                    left: 0%;
+                    height: 7px;
+                    position: absolute;
+                    background-color: $color-gray !important;
+                    opacity: 0;
+                    transition: opacity 0.5s ease-in-out;
+                }
+                &:hover {
+                    padding-left: 1.8rem;
+                    color: $color-yellow !important;
+                    &::before {
+                        opacity: 1;
+                        transition: opacity 0.5s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+
+    & .select2-selection__arrow {
+        height: 100% !important;
+    }
+}
+
+.select-states {
+    & .select2-container {
+        width: 19.5rem !important;
+        & .select2-selection {
+            @include respondMin(md-tab) {
+                border-top-left-radius: 25px !important;
+                border-bottom-left-radius: 25px !important;
+            }
+        }
+        @include respondMax(md-tab) {
+            width: 100% !important;
+        }
+    }
+}
+
+.select-minprice {
+    & .select2-container {
+        width: 13.25rem !important;
+        @include respondMax(md-tab) {
+            width: 100% !important;
+        }
+    }
+}
+.select-maxprice {
+    & .select2-container {
+        width: 13.25rem !important;
+        & .select2-selection {
+            @include respondMin(md-tab) {
+                border-top-right-radius: 25px !important;
+                border-bottom-right-radius: 25px !important;
+            }
+        }
+        @include respondMax(md-tab) {
+            width: 100% !important;
+        }
+    }
+}
+
+@mixin raine-filter {
+    position: relative !important;
+    background-color: $color-dark3 !important;
+    & .rain-filtermenu {
+        background-color: transparent !important;
+    }
+}
+
+.raine-filter {
+    z-index: 1;
+    background: linear-gradient(180deg, #00000000, #000) no-repeat;
+    @include respondMax(md-tab) {
+        @include raine-filter();
+    }
+    @include max-heightLand() {
+        @include raine-filter();
+    }
+}

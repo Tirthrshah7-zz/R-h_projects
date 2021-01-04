@@ -1,0 +1,59 @@
+.footer-sec {
+    background-color: $color-gray3;
+    & .brand-logo {
+        width: 17.125rem;
+        @include respondMax(sm-phone) {
+            width: 13rem;
+        }
+    }
+    & .follow-us {
+        & .fa-2x {
+            @include respondMax(sm-phone) {
+                font-size: 2rem;
+            }
+        }
+    }
+    & .raine-foot-link {
+        & li {
+            margin-bottom: 1rem;
+            & .raine-link {
+                display: flex;
+                align-items: center;
+                position: relative;
+                &::before {
+                    content: "";
+                    background-color: $color-white !important;
+                    width: 20px;
+                    height: 7px;
+                    opacity: 0;
+                    left: 0;
+                    position: absolute;
+                    transition: opacity 0.5s ease-in-out;
+                }
+                &:hover {
+                    color: $color-yellow !important;
+                    padding-left: 1.8rem;
+                    &::before {
+                        opacity: 1;
+                        transition: opacity 0.5s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+    & .policy-link {
+        &:not(:last-child)::after {
+            content: "|";
+            padding: 0 1.5rem;
+            width: 100%;
+            height: 100%;
+            @include respondMax(sm-phone) {
+                padding: 0 0.5rem;
+            }
+        }
+    }
+    & .policy-link,
+    & .copyright-text {
+        opacity: 0.5;
+    }
+}

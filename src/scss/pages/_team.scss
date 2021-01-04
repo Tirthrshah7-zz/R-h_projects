@@ -1,0 +1,112 @@
+.teams-sec {
+    background: linear-gradient(0deg, #00000096 0%, #000000ce 100%) 0% 0% no-repeat,
+        url("../images/banner/shade.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.team-info-sec {
+    .team-tabs {
+        & .nav-link {
+            background-color: $color-light;
+            transition: all 0.3s ease-in-out;
+            width: 9.5625rem;
+            border-radius: 0;
+            &:first-child {
+                border-top-left-radius: 23px;
+                border-bottom-left-radius: 23px;
+            }
+            &:last-child {
+                border-top-right-radius: 23px;
+                border-bottom-right-radius: 23px;
+            }
+            &.active {
+                background: linear-gradient(180deg, #f99d1c 0%, #ffcb05 100%) no-repeat padding-box;
+                color: $color-white !important;
+            }
+        }
+    }
+}
+
+.team-box {
+    max-width: max-content;
+    transition: all 0.5s ease-in-out;
+    & .project-links {
+        opacity: 0;
+    }
+    & img {
+        @include respondMin(md-tab) {
+            max-height: 24.4375rem;
+        }
+    }
+    & .team-overlay {
+        transition: all 0.4s ease-in-out;
+        opacity: 0;
+        & > * {
+            transform: translateY(20px);
+            transition: all 0.4s ease-in-out;
+        }
+        background: transparent linear-gradient(90deg, #000000 0%, #00000000 100%) 0% 0% no-repeat;
+    }
+
+    &:hover {
+        & .team-overlay {
+            opacity: 1;
+            & > * {
+                transform: translateY(0);
+            }
+        }
+        & .project-links {
+            opacity: 1;
+        }
+    }
+}
+
+.team-meet-sec {
+    .team-meet-indi {
+        &::before {
+            position: absolute;
+            left: -50%;
+            width: 100%;
+            height: 94px;
+            bottom: 10%;
+            content: "";
+            z-index: -1;
+            background-color: $color-yellow;
+            @include respondMax(md-tab) {
+                bottom: -6%;
+                left: -45%;
+            }
+        }
+        & img {
+            max-height: 483rem;
+        }
+    }
+    & .raine-btn-md {
+        height: 3.125rem;
+        width: 19.5rem;
+    }
+}
+
+.raine-info {
+    transition: 0.5s ease-in-out;
+    @include respondMax(md-tab) {
+        width: 90% !important;
+        margin: auto;
+    }
+    &::before {
+        transform: translate(-10%, 0);
+        transition: transform 0.5s ease-in-out;
+        content: "";
+    }
+    &:hover {
+        span {
+            opacity: 0;
+        }
+        &::before {
+            position: absolute;
+            transform: translate(0, 0);
+            content: attr(data-hover);
+        }
+    }
+}
