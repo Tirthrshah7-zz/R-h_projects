@@ -16,10 +16,13 @@
     }
     & .raine-tabs-link {
         position: relative;
-        padding: 1.5rem;
+        padding: 1rem;
         background: none !important;
         transition: all 0.3s ease-in-out;
         opacity: 0.3;
+        @include respondMin(md-tab) {
+            padding: 1.5rem;
+        }
         &.active {
             &::before {
                 background-color: $color-yellow;

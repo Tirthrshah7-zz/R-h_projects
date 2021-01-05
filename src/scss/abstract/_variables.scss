@@ -17,6 +17,7 @@ $color-gray3: #3c3c3d;
 $color-gray4: #707070;
 $color-gray5: #a0a0a0;
 $color-gray6: #ccc;
+$color-gray7: #9e9d9d;
 $color-shadow: #00000008;
 
 $theme-colors: () !default;
@@ -28,11 +29,12 @@ $theme-colors: map-merge(
     "dark4": $color-dark,
     "dark1": $color-dark1,
     "dark2": $color-dark2,
-    "adrk3": $color-dark3,
-    "adrk5": $color-dark4,
+    "dark3": $color-dark3,
+    "dark5": $color-dark4,
     "gray1": $color-gray,
     "gray2": $color-gray2,
     "gray5": $color-gray5,
+    "gray7": $color-gray7,
     "offwhite-2": $color-offwhite,
     "offwhite-3": $color-offwhite2,
     "offwhite-4": $color-offwhite3,

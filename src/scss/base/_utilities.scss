@@ -87,32 +87,8 @@
     height: 0.5rem;
 }
 .project-container {
-    & .project-title,
-    & .project-link {
-        margin: auto;
-        @include respondMin(xl-desktop) {
-            max-width: 1180px;
-        }
-        @include respondMin(xxl-desktop) {
-            max-width: 1350px;
-        }
-        @include respondMin(xxl-wide-desktop) {
-            max-width: 1640px;
-        }
-    }
-    & .project-box-row {
-        @include respondMin(xl-desktop) {
-            max-width: calc(100% - (calc(100% - 1180px)) / 2);
-        }
-        @include respondMin(xxl-desktop) {
-            max-width: calc(100% - (calc(100% - 1350px)) / 2);
-        }
-        @include respondMin(xxl-wide-desktop) {
-            max-width: calc(100% - (calc(100% - 1640px)) / 2);
-        }
-        &::-webkit-scrollbar {
-            display: none;
-        }
+    & .project-box-row::-webkit-scrollbar {
+        display: none;
     }
     & .project-box {
         cursor: pointer;
@@ -135,19 +111,36 @@
         }
         & .project-desc {
             z-index: 1;
-            & .project-desc-inner {
-                transition: transform 0.5s ease-in-out;
-            }
-            & .project-desc-btn {
-                opacity: 0;
-                transition: opacity 0.5s ease-in-out;
-            }
-            &:hover {
+            &.project-latest {
                 & .project-desc-inner {
-                    transform: translateY(-20px);
+                    transition: transform 0.5s ease-in-out;
                 }
                 & .project-desc-btn {
+                    opacity: 0;
+                    transition: opacity 0.5s ease-in-out;
+                }
+                &:hover {
+                    & .project-desc-inner {
+                        transform: translateY(-20px);
+                    }
+                    & .project-desc-btn {
+                        opacity: 1;
+                    }
+                }
+            }
+            & .project-links {
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out;
+                & I {
+                    transition: transform 0.5s ease-in-out;
+                }
+            }
+            &:hover {
+                & .project-links {
                     opacity: 1;
+                    & i {
+                        transform: translatex(8px);
+                    }
                 }
             }
         }
@@ -250,6 +243,12 @@
     @include respondMax(sm-phone) {
         width: 3rem;
     }
+    &-sm {
+        min-width: 20px;
+        height: 5px;
+        margin-top: 6px;
+        background-color: #ffcb05;
+    }
 }
 
 .padd-top {
@@ -273,4 +272,9 @@ h4,
 h5,
 h6 {
     font-weight: 400;
+}
+
+.form-control,
+.form-select {
+    color: $color-gray;
 }

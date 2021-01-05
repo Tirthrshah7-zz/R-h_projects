@@ -106,11 +106,8 @@
 .raine-info-sec {
     background: linear-gradient(89deg, #000000 0%, #54545400 100%) no-repeat,
         url(".././images/raine-info.png") no-repeat;
-    background-attachment: fixed;
     background-size: cover;
-    @include respondMin(md-tab) {
-        background-position: center center;
-    }
+    background-position: bottom;
 }
 
 .amplify-img {

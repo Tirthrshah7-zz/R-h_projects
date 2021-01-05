@@ -21,14 +21,12 @@
         }
     }
     & .sidemenu-link {
-        // flex: 2;
         &::-webkit-scrollbar {
             width: 5px !important;
         }
         &::-webkit-scrollbar-track {
             background: $color-gray5;
         }
-
         scrollbar-color: $color-orange $color-gray5;
         scrollbar-width: thin;
 
@@ -42,26 +40,9 @@
             & .nav-items {
                 padding: 0.75rem 2.5rem;
                 a {
-                    display: flex;
-                    align-items: center;
-                    position: relative;
-                    &::before {
-                        content: "";
-                        background-color: $color-yellow !important;
-                        width: 20px;
-                        height: 7px;
-                        opacity: 0;
-                        left: 0;
-                        position: absolute;
-                        transition: opacity 0.5s ease-in-out;
-                    }
+                    transition: none;
                     &:hover {
                         color: $color-yellow !important;
-                        padding-left: 1.8rem;
-                        &::before {
-                            opacity: 1;
-                            transition: opacity 0.5s ease-in-out;
-                        }
                     }
                 }
             }

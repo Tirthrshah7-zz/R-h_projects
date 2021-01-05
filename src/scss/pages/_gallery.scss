@@ -8,25 +8,34 @@
 .images-gallery {
     background-color: rgba($color: $color-gray6, $alpha: 0.1);
     & .img-box {
-        & .img-overlay {
-            opacity: 0;
-        }
         & .image-gallery {
             @include respondMax(md-tab) {
                 min-height: 23rem;
                 max-height: 26.25rem;
             }
         }
-        &:hover {
-            background-color: $color-gray;
-            img {
-                mix-blend-mode: luminosity;
+        @include respondMin(lg-desktop) {
+            & .img-overlay {
+                opacity: 0;
             }
-            .img-overlay {
-                opacity: 1;
-                & .bg-yellow {
-                    background-color: rgba($color: $color-yellow, $alpha: 0.88) !important;
+            &:hover {
+                background-color: $color-gray;
+                img {
+                    mix-blend-mode: luminosity;
                 }
+                .img-overlay {
+                    opacity: 1;
+                    & .bg-yellow {
+                        background-color: rgba($color: $color-yellow, $alpha: 0.88) !important;
+                    }
+                }
+            }
+        }
+        & .raine-full-galley {
+            width: 45px;
+            height: 45px;
+            &:hover {
+                color: $color-white !important;
             }
         }
         & .raine-btn-xl.fz-24 {
@@ -60,20 +69,6 @@
         @include respondMin(hd-desktop) {
             margin-right: -15%;
             width: 46.875rem;
-        }
-        & .feature-ul {
-            & p {
-                &::before {
-                    content: "";
-                    display: inline-block;
-                    margin-right: 1rem;
-                    width: 20px;
-                    height: 5px;
-                    background-color: $color-yellow;
-                    left: 0;
-                    margin-bottom: 4px;
-                }
-            }
         }
     }
 }
@@ -127,10 +122,15 @@
     }
 }
 
-.fancybox-active.compensate-for-scrollbar {
+.fancybox-active {
     margin-right: 0 !important;
     overflow-x: hidden !important ;
     overflow-y: auto !important;
+    .fancybox-content {
+        img {
+            object-fit: inherit !important;
+        }
+    }
 }
 
 .nav_tabs {
