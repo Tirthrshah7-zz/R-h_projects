@@ -6,7 +6,7 @@
         min-height: 830px;
     }
     @include respondMax(md-tab) {
-        padding-top: 26%;
+        padding-top: 29%;
         padding-bottom: 10%;
     }
     @include max-heightLand() {
