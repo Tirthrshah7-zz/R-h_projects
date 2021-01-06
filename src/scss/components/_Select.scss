@@ -74,7 +74,8 @@
 @mixin raine-filter {
     position: relative !important;
     background-color: $color-dark3 !important;
-    & .rain-filtermenu {
+    background: none;
+    & .raine-filtermenu--bg_light {
         background-color: transparent !important;
     }
 }

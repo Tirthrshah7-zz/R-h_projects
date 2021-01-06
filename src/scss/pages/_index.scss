@@ -107,7 +107,10 @@
     background: linear-gradient(89deg, #000000 0%, #54545400 100%) no-repeat,
         url(".././images/raine-info.png") no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
+    @include respondMax(md-tab) {
+        background-position: inherit;
+    }
 }
 
 .amplify-img {
