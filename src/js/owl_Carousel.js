@@ -1,4 +1,5 @@
-$('.owl-carousel').owlCarousel({
+var owl = $('.owl-carousel');
+owl.owlCarousel({
     loop: true,
     margin: 20,
     nav: true,
@@ -18,4 +19,12 @@ $('.owl-carousel').owlCarousel({
             items: 3
         }
     }
-})
+});
+owl.on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY > 0) {
+        owl.trigger('next.owl');
+    } else {
+        owl.trigger('prev.owl');
+    }
+    e.preventDefault();
+});
