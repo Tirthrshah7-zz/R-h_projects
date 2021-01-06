@@ -95,6 +95,10 @@
         img {
             transition: transform 0.5s ease-in-out;
         }
+        & .project-desc-btn {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
         &::after {
             top: 0;
             right: 0;
@@ -108,24 +112,16 @@
             img {
                 transform: scale(1.2);
             }
+            & .project-desc-btn {
+                opacity: 1;
+                z-index: 1;
+            }
         }
         & .project-desc {
             z-index: 1;
             &.project-latest {
                 & .project-desc-inner {
                     transition: transform 0.5s ease-in-out;
-                }
-                & .project-desc-btn {
-                    opacity: 0;
-                    transition: opacity 0.5s ease-in-out;
-                }
-                &:hover {
-                    & .project-desc-inner {
-                        transform: translateY(-20px);
-                    }
-                    & .project-desc-btn {
-                        opacity: 1;
-                    }
                 }
             }
             & .project-links {
@@ -135,6 +131,7 @@
                     transition: transform 0.5s ease-in-out;
                 }
             }
+
             &:hover {
                 & .project-links {
                     opacity: 1;
