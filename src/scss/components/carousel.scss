@@ -1,7 +1,9 @@
 .raine-banner-carousel {
     & .carousel-item {
         @include respondMax(md-tab) {
-            min-height: 350px;
+            .project-details {
+                min-height: 350px;
+            }
         }
         & .carousel-overlay {
             @include respondMin(md-tab) {
