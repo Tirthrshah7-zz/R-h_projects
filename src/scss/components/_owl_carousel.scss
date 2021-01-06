@@ -1,0 +1,16 @@
+.owl-carousel {
+    & .owl-nav {
+        display: none;
+    }
+    & .owl-dots {
+        margin-top: 1.5rem;
+    }
+    & .owl-item {
+        & img {
+            height: 100%;
+        }
+    }
+    & .project-box {
+        height: 22.6rem;
+    }
+}

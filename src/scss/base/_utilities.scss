@@ -86,14 +86,13 @@
     width: 80px;
     height: 0.5rem;
 }
+
 .project-container {
-    & .project-box-row::-webkit-scrollbar {
-        display: none;
-    }
     & .project-box {
         cursor: pointer;
         img {
             transition: transform 0.5s ease-in-out;
+            height: 100%;
         }
         & .project-desc-btn {
             opacity: 0;
@@ -131,7 +130,6 @@
                     transition: transform 0.5s ease-in-out;
                 }
             }
-
             &:hover {
                 & .project-links {
                     opacity: 1;

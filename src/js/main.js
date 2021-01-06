@@ -25,20 +25,28 @@ close.forEach(sidebar => {
 
 
 // project scroll mouse
-$(function ($) {
-    $.fn.hScroll = function (amount) {
-        amount = amount || 20;
-        $(this).bind("DOMMouseScroll mousewheel", function (event) {
-            var oEvent = event.originalEvent,
-                direction = oEvent.detail ? oEvent.detail * -amount : oEvent.wheelDelta,
-                position = $(this).scrollLeft();
-            position += direction > 0 ? -amount : amount;
-            $(this).scrollLeft(position);
-            event.preventDefault();
-        })
-    };
-});
+// $(function ($) {
+//     $.fn.hScroll = function (amount) {
+//         amount = amount || 20;
+//         $(this).bind("DOMMouseScroll mousewheel", function (event) {
+//             var oEvent = event.originalEvent,
+//                 direction = oEvent.detail ? oEvent.detail * -amount : oEvent.wheelDelta,
+//                 position = $(this).scrollLeft();
+//             position += direction > 0 ? -amount : amount;
+//             $(this).scrollLeft(position);
+//             event.preventDefault();
+//         })
+//     };
+// });
 
-$(document).ready(function () {
-    $('.project-box-row').hScroll(160); // You can pass (optionally) scrolling amount
+// $(document).ready(function () {
+//     $('.project-box-row').hScroll(160); // You can pass (optionally) scrolling amount
+// });
+
+
+// select-2 js
+$(".js-example-placeholder-single").select2({
+    placeholder: "Select a state",
+    allowClear: true,
+    containerCssClass: "error",
 });
