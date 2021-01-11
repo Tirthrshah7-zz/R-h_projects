@@ -80,7 +80,7 @@
         width: 56.6875rem; //907px
         z-index: 3;
         @include respondMin(xl-desktop) {
-            margin-top: 5rem;
+            margin-top: 9rem;
         }
         @include respondMin(xxl-full-desktop) {
             margin-top: 8.75rem;
