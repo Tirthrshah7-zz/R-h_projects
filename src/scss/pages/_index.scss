@@ -2,15 +2,14 @@
     padding-top: 10%;
     padding-bottom: 24%;
     @include respondMin(xl-desktop) {
-        max-height: 830px;
-        min-height: 830px;
+        min-height: 840px;
     }
     @include respondMax(md-tab) {
         padding-top: 29%;
         padding-bottom: 10%;
     }
     @include max-heightLand() {
-        padding-top: 16%;
+        padding-top: 18%;
         padding-bottom: 16%;
     }
     & .project-btn {

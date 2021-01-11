@@ -1,253 +1,62 @@
-// @font-face {
-//   font-family: "Bw Modelica";
-//   src: url("../fonts/BwModelica-BlackItalic.eot");
-//   src: url("../fonts/BwModelica-BlackItalic.eot?#iefix") format("embedded-opentype"),
-//     url("../fonts/BwModelica-BlackItalic.woff2") format("woff2"),
-//     url("../fonts/BwModelica-BlackItalic.woff") format("woff"),
-//     url("../fonts/BwModelica-BlackItalic.ttf") format("truetype");
-//   font-weight: 900;
-//   font-style: italic;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: "Bw Modelica";
-//   src: url("../fonts/BwModelica-Bold.eot");
-//   src: url("../fonts/BwModelica-Bold.eot?#iefix") format("embedded-opentype"),
-//     url("../fonts/BwModelica-Bold.woff2") format("woff2"), url("../fonts/BwModelica-Bold.woff") format("woff"),
-//     url("../fonts/BwModelica-Bold.ttf") format("truetype");
-//   font-weight: bold;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: "Bw Modelica";
-//   src: url("../fonts/BwModelica-Black.eot");
-//   src: url("../fonts/BwModelica-Black.eot?#iefix") format("embedded-opentype"),
-//     url("../fonts/BwModelica-Black.woff2") format("woff2"), url("../fonts/BwModelica-Black.woff") format("woff"),
-//     url("../fonts/BwModelica-Black.ttf") format("truetype");
-//   font-weight: 900;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: "Bw Modelica";
-//   src: url("../fonts/BwModelica-ExtraBold.eot");
-//   src: url("../fonts/BwModelica-ExtraBold.eot?#iefix") format("embedded-opentype"),
-//     url("../fonts/BwModelica-ExtraBold.woff2") format("woff2"), url("../fonts/BwModelica-ExtraBold.woff") format("woff"),
-//     url("../fonts/BwModelica-ExtraBold.ttf") format("truetype");
-//   font-weight: 800;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: "Bw Modelica";
-//   src: url("../fonts/BwModelica-ExtraBoldItalic.eot");
-//   src: url("../fonts/BwModelica-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"),
-//     url("../fonts/BwModelica-ExtraBoldItalic.woff2") format("woff2"),
-//     url("../fonts/BwModelica-ExtraBoldItalic.woff") format("woff"),
-//     url("../fonts/BwModelica-ExtraBoldItalic.ttf") format("truetype");
-//   font-weight: 800;
-//   font-style: italic;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: "Bw Modelica";
-//   src: url("../fonts/BwModelica-BoldItalic.eot");
-//   src: url("../fonts/BwModelica-BoldItalic.eot?#iefix") format("embedded-opentype"),
-//     url("../fonts/BwModelica-BoldItalic.woff2") format("woff2"),
-//     url("../fonts/BwModelica-BoldItalic.woff") format("woff"),
-//     url("../fonts/BwModelica-BoldItalic.ttf") format("truetype");
-//   font-weight: bold;
-//   font-style: italic;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: "Bw Modelica Hairline";
-//   src: url("../fonts/BwModelica-Hairline.eot");
-//   src: url("../fonts/BwModelica-Hairline.eot?#iefix") format("embedded-opentype"),
-//     url("../fonts/BwModelica-Hairline.woff2") format("woff2"), url("../fonts/BwModelica-Hairline.woff") format("woff"),
-//     url("../fonts/BwModelica-Hairline.ttf") format("truetype");
-//   font-weight: 100;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: "Bw Modelica";
-//   src: url("../fonts/BwModelica-Light.eot");
-//   src: url("../fonts/BwModelica-Light.eot?#iefix") format("embedded-opentype"),
-//     url("../fonts/BwModelica-Light.woff2") format("woff2"), url("../fonts/BwModelica-Light.woff") format("woff"),
-//     url("../fonts/BwModelica-Light.ttf") format("truetype");
-//   font-weight: 300;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: "Bw Modelica Hairline";
-//   src: url("../fonts/BwModelica-HairlineItalic.eot");
-//   src: url("../fonts/BwModelica-HairlineItalic.eot?#iefix") format("embedded-opentype"),
-//     url("../fonts/BwModelica-HairlineItalic.woff2") format("woff2"),
-//     url("../fonts/BwModelica-HairlineItalic.woff") format("woff"),
-//     url("../fonts/BwModelica-HairlineItalic.ttf") format("truetype");
-//   font-weight: 100;
-//   font-style: italic;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: "Bw Modelica";
-//   src: url("../fonts/BwModelica-LightItalic.eot");
-//   src: url("../fonts/BwModelica-LightItalic.eot?#iefix") format("embedded-opentype"),
-//     url("../fonts/BwModelica-LightItalic.woff2") format("woff2"),
-//     url("../fonts/BwModelica-LightItalic.woff") format("woff"),
-//     url("../fonts/BwModelica-LightItalic.ttf") format("truetype");
-//   font-weight: 300;
-//   font-style: italic;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: "Bw Modelica";
-//   src: url("../fonts/BwModelica-Regular.eot");
-//   src: url("../fonts/BwModelica-Regular.eot?#iefix") format("embedded-opentype"),
-//     url("../fonts/BwModelica-Regular.woff2") format("woff2"), url("../fonts/BwModelica-Regular.woff") format("woff"),
-//     url("../fonts/BwModelica-Regular.ttf") format("truetype");
-//   font-weight: 400;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: "Bw Modelica";
-//   src: url("../fonts/BwModelica-Medium.eot");
-//   src: url("../fonts/BwModelica-Medium.eot?#iefix") format("embedded-opentype"),
-//     url("../fonts/BwModelica-Medium.woff2") format("woff2"), url("../fonts/BwModelica-Medium.woff") format("woff"),
-//     url("../fonts/BwModelica-Medium.ttf") format("truetype");
-//   font-weight: 500;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: "Bw Modelica";
-//   src: url("../fonts/BwModelica-MediumItalic.eot");
-//   src: url("../fonts/BwModelica-MediumItalic.eot?#iefix") format("embedded-opentype"),
-//     url("../fonts/BwModelica-MediumItalic.woff2") format("woff2"),
-//     url("../fonts/BwModelica-MediumItalic.woff") format("woff"),
-//     url("../fonts/BwModelica-MediumItalic.ttf") format("truetype");
-//   font-weight: 500;
-//   font-style: italic;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: "Bw Modelica";
-//   src: url("../fonts/BwModelica-RegularItalic.eot");
-//   src: url("../fonts/BwModelica-RegularItalic.eot?#iefix") format("embedded-opentype"),
-//     url("../fonts/BwModelica-RegularItalic.woff2") format("woff2"),
-//     url("../fonts/BwModelica-RegularItalic.woff") format("woff"),
-//     url("../fonts/BwModelica-RegularItalic.ttf") format("truetype");
-//   font-weight: 400;
-//   font-style: italic;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: "Bw Modelica";
-//   src: url("../fonts/BwModelica-ThinItalic.eot");
-//   src: url("../fonts/BwModelica-ThinItalic.eot?#iefix") format("embedded-opentype"),
-//     url("../fonts/BwModelica-ThinItalic.woff2") format("woff2"),
-//     url("../fonts/BwModelica-ThinItalic.woff") format("woff"),
-//     url("../fonts/BwModelica-ThinItalic.ttf") format("truetype");
-//   font-weight: 100;
-//   font-style: italic;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: "Bw Modelica";
-//   src: url("../fonts/BwModelica-Thin.eot");
-//   src: url("../fonts/BwModelica-Thin.eot?#iefix") format("embedded-opentype"),
-//     url("../fonts/BwModelica-Thin.woff2") format("woff2"), url("../fonts/BwModelica-Thin.woff") format("woff"),
-//     url("../fonts/BwModelica-Thin.ttf") format("truetype");
-//   font-weight: 100;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
 @font-face {
-  font-family: "RaineHorne Rg";
+  font-family: "Raine&HorneLight";
   src: url("../fonts/RaineHorne-Light.woff2") format("woff2"), url("../fonts/RaineHorne-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
-@font-face {
-  font-family: "RaineHorne Rg";
-  src: url("../fonts/RaineHorne-Regular.woff2") format("woff2"), url("../fonts/RaineHorne-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+// @font-face {
+//   font-family: "RaineHorne Rg";
+//   src: url("../fonts/RaineHorne-Regular.woff2") format("woff2"), url("../fonts/RaineHorne-Regular.woff") format("woff");
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }
 
 $font-size: () !default;
 $font-size: map-merge(
   (
-    "10": 0.625rem,
-    "11": 0.6875rem,
-    "12": 0.75rem,
-    "13": 0.8125rem,
-    "14": 0.875rem,
-    "15": 0.9375rem,
-    "16": 1rem,
-    "17": 1.0625rem,
     "18": 1.125rem,
-    "19": 1.1875rem,
-    "20": 1.25rem,
-    "22": 1.375rem,
     "24": 1.5rem,
-    "26": 1.625rem,
-    "28": 1.75rem,
-    "30": 1.875rem,
     "32": 2rem,
-    "34": 2.125rem,
-    "36": 2.25rem,
-    "40": 2.5rem,
-    "48": 3rem,
-    "52": 3.25rem,
-    "58": 3.625rem,
     "60": 3.75rem,
-    "64": 4rem,
-    "72": 4.5rem,
   ),
   $font-size
 );
 
-$font-weight: () !default;
-$font-weight: map-merge(
-  (
-    "300": 300,
-    "400": 400,
-    "500": 500,
-    "600": 600,
-    "700": 700,
-    "900": 900,
-  ),
-  $font-weight
-);
+// $font-weight: () !default;
+// $font-weight: map-merge(
+//   (
+//     "300": 300,
+//     "400": 400,
+//     "500": 500,
+//     "600": 600,
+//     "700": 700,
+//     "900": 900,
+//   ),
+//   $font-weight
+// );
 
-@each $fw-weight, $value in $font-weight {
-  @include font-weight(".fw-#{$fw-weight}", $value);
-}
+// @each $fw-weight, $value in $font-weight {
+//   @include font-weight(".fw-#{$fw-weight}", $value);
+// }
 
 @each $fz-size, $value in $font-size {
   @include font-size(".fz-#{$fz-size}", $value);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-size: 1rem;
 }

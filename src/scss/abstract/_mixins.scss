@@ -125,7 +125,7 @@ $breakpoint arguement choices:
 }
 
 @mixin max-heightLand {
-	@media (max-height: 700px) and (orientation: landscape) {
+	@media (max-height: 450px) and (orientation: landscape) {
 		@content;
 	}
 }

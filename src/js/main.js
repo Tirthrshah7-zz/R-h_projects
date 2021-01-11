@@ -3,7 +3,7 @@ var scrollpos = window.scrollY;
 var header = document.querySelector(".header");
 window.addEventListener('scroll', function () {
     scrollpos = window.scrollY;
-    if (scrollpos > 50) {
+    if (scrollpos > 45) {
         header.classList.add("header-bg");
     }
     else {
@@ -43,10 +43,3 @@ close.forEach(sidebar => {
 //     $('.project-box-row').hScroll(160); // You can pass (optionally) scrolling amount
 // });
 
-
-// select-2 js
-$(".js-example-placeholder-single").select2({
-    placeholder: "Select a state",
-    allowClear: true,
-    containerCssClass: "error",
-});

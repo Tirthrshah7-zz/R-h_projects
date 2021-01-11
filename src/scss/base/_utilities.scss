@@ -166,25 +166,25 @@
             font-size: 2.5rem;
         }
         @include respondMax(sm-phone) {
-            font-size: 2rem;
-        }
-    }
-    &-xl {
-        @include respondMax(lg-desktop) {
-            font-size: 2.5rem;
-        }
-        @include respondMax(sm-phone) {
             font-size: 2.1rem;
         }
     }
-    &-lg {
-        @include respondMax(hd-desktop) {
-            font-size: 2rem;
-        }
-        @include respondMax(sm-phone) {
-            font-size: 1.875rem;
-        }
-    }
+    // &-xl {
+    //     @include respondMax(lg-desktop) {
+    //         font-size: 2.5rem;
+    //     }
+    //     @include respondMax(sm-phone) {
+    //         font-size: 2.1rem;
+    //     }
+    // }
+    // &-lg {
+    //     @include respondMax(hd-desktop) {
+    //         font-size: 2rem;
+    //     }
+    //     @include respondMax(sm-phone) {
+    //         font-size: 1.875rem;
+    //     }
+    // }
     &-md {
         @include respondMax(lg-desktop) {
             font-size: 1.75rem;
@@ -195,14 +195,14 @@
     }
     &-sm {
         @include respondMax(sm-phone) {
-            font-size: 1.32rem;
+            font-size: 1.5rem;
         }
     }
-    &-xs {
-        @include respondMax(sm-phone) {
-            font-size: 1.2rem;
-        }
-    }
+    // &-xs {
+    //     @include respondMax(sm-phone) {
+    //         font-size: 1.2rem;
+    //     }
+    // }
 }
 .wrapper {
     .container {

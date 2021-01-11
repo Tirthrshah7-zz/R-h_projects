@@ -2,12 +2,12 @@
     & .carousel-item {
         @include respondMax(md-tab) {
             .project-details {
-                min-height: 350px;
+                min-height: 380px;
             }
         }
         & .carousel-overlay {
             @include respondMin(md-tab) {
-                min-height: 95vh;
+                min-height: 96vh;
             }
         }
         & .carousel-images {
