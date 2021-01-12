@@ -38,12 +38,6 @@
                 color: $color-white !important;
             }
         }
-        & .raine-btn-xl.fz-24 {
-            @include respondMax(xxl-desktop) {
-                font-size: 1.3rem;
-                height: 4.5rem;
-            }
-        }
     }
 }
 
@@ -108,16 +102,6 @@
     & .map {
         & img {
             max-height: 500px;
-        }
-    }
-}
-
-.know-sec {
-    .raine-btn-xl {
-        height: 4.7rem;
-        width: max-content;
-        @include respondMax(md-tab) {
-            height: 4rem;
         }
     }
 }

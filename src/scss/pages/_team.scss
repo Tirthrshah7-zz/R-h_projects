@@ -84,14 +84,14 @@
             max-height: 483rem;
         }
     }
-    & .raine-btn-md {
-        height: 3.125rem;
-        width: 19.5rem;
-    }
 }
 
 .raine-info {
-    transition: 0.5s ease-in-out;
+    width: 20rem;
+    &:last-child {
+        width: 14.5rem;
+    }
+    transition: all 0.15s ease-in-out;
     @include respondMax(md-tab) {
         width: 90% !important;
         margin: auto;
@@ -102,11 +102,12 @@
         content: "";
     }
     &:hover {
+        width: auto;
         span {
+            position: absolute;
             opacity: 0;
         }
         &::before {
-            position: absolute;
             transform: translate(0, 0);
             content: attr(data-hover);
         }

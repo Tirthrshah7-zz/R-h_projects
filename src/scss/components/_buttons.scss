@@ -1,46 +1,28 @@
 .raine-btn {
     &-xl {
-        width: 17.875rem;
-        height: 6.25rem; //318px
-        @include respondMax(hd-desktop) {
-            height: 5rem;
-            width: 15rem;
-        }
+        padding: 1.375rem 4.5rem;
         @include respondMax(lg-desktop) {
-            width: 14rem;
-            height: 4rem;
+            padding: 1rem 3.5rem;
+        }
+        @include respondMax(sm-phone) {
+            padding: 0.85rem 2rem;
         }
     }
     &-lg {
         max-width: 29.5rem; //472px
-        height: 4.25rem; //68px
-        @include respondMax(lg-desktop) {
-            height: 4rem;
-        }
-        @include respondMax(md-tab) {
-            height: 3.5rem;
-        }
+        padding: 1.1rem 0.5rem;
     }
     &-md {
-        width: 13.25rem; //212px
-        height: 4.25rem; //68px
+        padding: 1rem 3.25rem;
         @include respondMax(lg-desktop) {
-            height: 4rem;
-        }
-        @include respondMax(md-tab) {
-            height: 3.5rem;
+            padding: 0.795rem 2.65rem;
         }
     }
     &-sm {
-        height: 3.125rem;
-        width: 9.375rem;
-        @include respondMax(lg-desktop) {
-            height: 2.975rem;
+        padding: 0.785rem 2.3rem;
+        @include respondMax(hd-desktop) {
+            padding: 0.75rem 2.2rem;
         }
-    }
-    &-xs {
-        width: max-content;
-        height: 2.5rem; //40px
     }
 }
 
