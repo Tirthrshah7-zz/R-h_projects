@@ -47,11 +47,9 @@
             margin-left: -37%;
         }
         @include respondMin(xlhd-desktop) {
-            margin-left: -20%;
+            margin-left: -15%;
         }
-        @include respondMin(xxl-wide-desktop) {
-            margin-left: -12%;
-        }
+
         & img {
             width: 80rem;
             @include respondMax(xxl-full-desktop) {
