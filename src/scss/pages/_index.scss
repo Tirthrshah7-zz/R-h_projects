@@ -82,9 +82,6 @@
         @include respondMin(xl-desktop) {
             margin-top: 9rem;
         }
-        @include respondMin(xxl-full-desktop) {
-            margin-top: 8.75rem;
-        }
     }
     & .about-btn {
         @include respondMax(lg-desktop) {
@@ -106,9 +103,9 @@
     background: linear-gradient(89deg, #000000 0%, #54545400 100%) no-repeat,
         url(".././images/raine-info.png") no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     @include respondMax(md-tab) {
-        background-position: inherit;
+        background-position: top center;
     }
 }
 
