@@ -197,9 +197,6 @@
         @include respondMax(lg-desktop) {
             font-size: 1.75rem;
         }
-        @include respondMax(sm-phone) {
-            font-size: 1.6rem;
-        }
     }
     &-sm {
         @include respondMax(sm-phone) {
