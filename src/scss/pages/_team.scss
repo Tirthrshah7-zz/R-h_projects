@@ -36,11 +36,6 @@
     & .project-links {
         opacity: 0;
     }
-    & img {
-        @include respondMin(md-tab) {
-            max-height: 24.4375rem;
-        }
-    }
     & .team-overlay {
         transition: all 0.4s ease-in-out;
         opacity: 0;
@@ -79,9 +74,6 @@
                 bottom: -6%;
                 left: -45%;
             }
-        }
-        & img {
-            max-height: 483rem;
         }
     }
 }
