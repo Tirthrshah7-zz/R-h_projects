@@ -116,7 +116,12 @@
         }
     }
 }
-
+.fancybox-progress {
+    background-color: $color-orange !important;
+}
+.fancybox-thumbs__list a:before {
+    border-color: $color-yellow !important;
+}
 .nav_tabs {
     position: fixed;
     right: 0;
