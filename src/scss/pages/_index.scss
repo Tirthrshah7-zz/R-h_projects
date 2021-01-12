@@ -112,11 +112,6 @@
     }
 }
 
-.amplify-img {
-    height: 23.1875rem; //371px
-    right: 1%;
-}
-
 .project-box {
     @include respondMin(md-tab) {
         height: 21.8125rem;

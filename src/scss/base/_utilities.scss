@@ -157,6 +157,14 @@
     }
 }
 
+.amplify-img {
+    max-width: 26.5rem;
+    right: 1%;
+    @include respondMax(lg-desktop) {
+        max-width: 24rem;
+    }
+}
+
 .title {
     &-xxl {
         @include respondMax(hd-desktop) {
